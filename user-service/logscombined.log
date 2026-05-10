@@ -1,0 +1,8 @@
+{"level":"info","message":"server is running fine","timestamp":"2026-05-10T14:46:47.053Z"}
+{"level":"info","message":"server is running fine","service":"User service","timestamp":"2026-05-10T14:48:29.370Z"}
+{"level":"info","message":"server is running fine","service":"User service","timestamp":"2026-05-10T14:50:14.707Z"}
+{"level":"info","message":"server is running fine","service":"User service","timestamp":"2026-05-10T14:50:52.684Z"}
+{"level":"info","message":"server is running fine","service":"User service","timestamp":"2026-05-10T14:50:54.442Z"}
+{"level":"info","message":"server is running fine","service":"User service","timestamp":"2026-05-10T14:50:54.654Z"}
+[undefined] [info] [User service] [server is running fine]
+[2026-05-10T14:55:35.059Z] [error] [User service] [server not is running fine]
