@@ -9,7 +9,7 @@ services:
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
-      POSTGRES_DB: irctc_db
+      POSTGRES_DB: user_service_database
 
     ports:
       - "5432:5432"

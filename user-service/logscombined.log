@@ -6,3 +6,5 @@
 {"level":"info","message":"server is running fine","service":"User service","timestamp":"2026-05-10T14:50:54.654Z"}
 [undefined] [info] [User service] [server is running fine]
 [2026-05-10T14:55:35.059Z] [error] [User service] [server not is running fine]
+[2026-05-11T03:23:09.526Z] [error] [User service] [server not is running fine]
+[2026-05-11T03:23:59.704Z] [info] [User service] [server  is running fine]

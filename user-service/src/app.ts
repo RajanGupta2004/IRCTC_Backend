@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
-  logger.error("server not is running fine");
+  logger.info("server  is running fine");
   res.status(200).json({
     message: "user service is running fine",
   });
