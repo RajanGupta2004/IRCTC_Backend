@@ -8,3 +8,61 @@
 [2026-05-10T14:55:35.059Z] [error] [User service] [server not is running fine]
 [2026-05-11T03:23:09.526Z] [error] [User service] [server not is running fine]
 [2026-05-11T03:23:59.704Z] [info] [User service] [server  is running fine]
+[2026-05-17T11:10:56.761Z] [error] [User service] [eror in send otp Cannot destructure property 'firstName' of 'req.body' as it is undefined.]
+[2026-05-17T11:11:48.415Z] [error] [User service] [eror in send otp Cannot destructure property 'firstName' of 'req.body' as it is undefined.]
+[2026-05-17T11:11:52.982Z] [error] [User service] [eror in send otp Allfield are required]
+[2026-05-17T11:17:38.888Z] [error] [User service] [eror in send otp Allfield are required]
+[2026-05-17T11:18:22.811Z] [error] [User service] [eror in send otp Allfield are required]
+[2026-05-17T11:18:22.817Z] [error] [User service] [password mismatch]
+[2026-05-17T11:18:50.432Z] [error] [User service] [eror in send otp Allfield are required]
+[2026-05-17T11:18:50.435Z] [error] [User service] [password mismatch]
+[2026-05-17T11:20:18.240Z] [error] [User service] [eror in send otp Allfield are required]
+[2026-05-17T11:20:18.246Z] [error] [User service] [Allfield are required]
+[2026-05-17T11:30:38.624Z] [error] [User service] [PrismaClientValidationError: 
+Invalid `prisma.user.findUnique()` invocation in
+D:\IRCTC_Backend\user-service\src\services\auth.service.ts:16:36
+
+  13 }
+  14 export const sendOtp = async (dto: sendOtpDto) => {
+  15   try {
+→ 16     const user = await prisma.user.findUnique({
+           where: {
+             email: undefined,
+         ?   id?: String,
+         ?   AND?: UserWhereInput | UserWhereInput[],
+         ?   OR?: UserWhereInput[],
+         ?   NOT?: UserWhereInput | UserWhereInput[],
+         ?   firstName?: StringFilter | String,
+         ?   lastName?: StringFilter | String,
+         ?   password?: StringNullableFilter | String | Null,
+         ?   emailVerified?: BoolFilter | Boolean,
+         ?   createdAt?: DateTimeFilter | DateTime,
+         ?   updatedAt?: DateTimeFilter | DateTime
+           }
+         })
+
+Argument `where` of type UserWhereUniqueInput needs at least one of `id` or `email` arguments. Available options are marked with ?.]
+[2026-05-17T11:30:45.782Z] [error] [User service] [PrismaClientValidationError: 
+Invalid `prisma.user.findUnique()` invocation in
+D:\IRCTC_Backend\user-service\src\services\auth.service.ts:16:36
+
+  13 }
+  14 export const sendOtp = async (dto: sendOtpDto) => {
+  15   try {
+→ 16     const user = await prisma.user.findUnique({
+           where: {
+             email: undefined,
+         ?   id?: String,
+         ?   AND?: UserWhereInput | UserWhereInput[],
+         ?   OR?: UserWhereInput[],
+         ?   NOT?: UserWhereInput | UserWhereInput[],
+         ?   firstName?: StringFilter | String,
+         ?   lastName?: StringFilter | String,
+         ?   password?: StringNullableFilter | String | Null,
+         ?   emailVerified?: BoolFilter | Boolean,
+         ?   createdAt?: DateTimeFilter | DateTime,
+         ?   updatedAt?: DateTimeFilter | DateTime
+           }
+         })
+
+Argument `where` of type UserWhereUniqueInput needs at least one of `id` or `email` arguments. Available options are marked with ?.]

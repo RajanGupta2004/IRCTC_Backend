@@ -4,6 +4,7 @@ import morgan from "morgan";
 import logger from "./config/logger";
 import { errorHandler } from "./middleware/error.middleware";
 import { prisma } from "./config/prisma";
+import authRoute from "./routes/auth.routes";
 
 const app = express();
 
@@ -17,6 +18,8 @@ app.get("/", (req, res) => {
     message: "user service is running fine",
   });
 });
+
+app.use("/api/v1", authRoute);
 
 app.use(errorHandler);
 export default app;
