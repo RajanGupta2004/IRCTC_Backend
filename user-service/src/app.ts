@@ -3,6 +3,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import logger from "./config/logger";
 import { errorHandler } from "./middleware/error.middleware";
+import { prisma } from "./config/prisma";
 
 const app = express();
 
